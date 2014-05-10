@@ -1,0 +1,14 @@
+{
+  "name": "namespace-simple",
+  "main": "Namespace.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mattlo/Namespace",
+  "authors": [
+    "Matt Lo <mattlo.developer@gmail.com>"
+  ],
+  "description": "Short and simple way to create dot notation namespaces",
+  "keywords": [
+    "namespace"
+  ],
+  "license": "Apache 2"
+}
