@@ -11,12 +11,20 @@ bower install namespace-simple
 
 ## Usage
 
-Declaring on top of a file:
+Declaring on top of a file in a practical scenario:
 
 ```
+// file1.js
 NS('foo.bar.baz');
+foo.bar.baz.Object = {name: "Matt"};
 
-foo.bar.baz = {};
+// file2.js
+NS('foo.bar.baz');
+foo.bar.baz.AnotherObject = {name: foo.bar.baz.Object.name + " Lo"};
+
+// some other file dot js that has file1.js and file2.js loaded respectively
+foo.bar.baz.Object; // {name: "Matt"}
+foo.bar.baz.AnotherObject; // {name: "Matt Lo"}
 ```
 
 Chained:
